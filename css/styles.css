@@ -329,9 +329,7 @@ section .title::after{
     color:  #008DD5;
     background: none;
 }
-.skills .skills-content .right .bars{
-    margin-bottom: 15px;
-}
+
 .skills .skills-content .right .info{
     display: flex;
     margin-bottom: 5px;
@@ -356,7 +354,12 @@ section .title::after{
     top: 0;
     background:  #008DD5;
 }
-.skills-content .right .html::before{
+.row {
+    content: "";
+    clear: both;
+    display: flex;
+}
+/* .skills-content .right .html::before{
     width: 90%;
 }
 .skills-content .right .css::before{
@@ -373,7 +376,10 @@ section .title::after{
 }
 .skills-content .right .postgresql::before{
 	width: 85%;
-}
+} */
+/* .skills .skills-content .right .bars{
+    margin-bottom: 15px;
+} */
 
 /* teams section styling */
 .teams .title::after{
@@ -670,6 +676,9 @@ footer span a:hover{
     .contact .right form .name,
     .contact .right form .email{
         margin: 0;
+    }
+    .row{
+        width: 100%;
     }
     .scroll-up-btn{
         right: 15px;
